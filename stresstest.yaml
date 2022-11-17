@@ -7,7 +7,7 @@ metadata:
   name: stresstest
 spec:
   progressDeadlineSeconds: 600
-  replicas: 2
+  replicas: 1
   revisionHistoryLimit: 10
   selector:
     matchLabels:
@@ -28,7 +28,7 @@ spec:
         - --vm
         - "1"
         - --vm-bytes
-        - 1.5G
+        - 1.8G
         image: progrium/stress
         imagePullPolicy: IfNotPresent
         name: stress
